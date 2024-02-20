@@ -62,6 +62,7 @@ h6{
         flex-direction: row;
         align-items:center;
         justify-content: space-between;
+        gap: 30px;
     
         &:first-of-type {
             padding-left: 26px;
@@ -139,8 +140,8 @@ h6{
 .education {
     display: flex;
     background-color: $base-white;
-    justify-content: center; /* Центрирование по горизонтали */
-    align-items: center; /* Центрирование по вертикали */
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 
     &__title {

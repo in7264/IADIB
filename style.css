@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
 }
@@ -56,6 +55,7 @@ h6 {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 .header .menu:first-of-type {
   padding-left: 26px;
@@ -125,8 +125,8 @@ h6 {
 .education {
   display: flex;
   background-color: #FFFFFF;
-  justify-content: center; /* Центрирование по горизонтали */
-  align-items: center; /* Центрирование по вертикали */
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 .education__title {
