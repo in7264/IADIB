@@ -1,0 +1,259 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 40px;
+  margin: 0;
+}
+
+h3 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 24px;
+  margin: 0;
+}
+
+h5 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 20px;
+  margin: 0;
+}
+
+h6 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 16px;
+  margin: 0;
+}
+
+.header .menu {
+  height: 144px;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .menu:first-of-type {
+  padding-left: 26px;
+}
+.header .menu:last-of-type {
+  padding-right: 52px;
+}
+.header .menu__item {
+  font-family: "Kyiv*Type Titling";
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.abitur {
+  background-image: url(images/abitur.png);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-position: center bottom;
+  position: relative;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 464px;
+  height: 331px;
+  margin-left: 764px;
+  margin-top: 126px;
+  background-color: rgba(0, 0, 0, 0.7490196078);
+  align-items: center;
+}
+.message__title {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 26px;
+}
+.message__text {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: normal;
+  margin-top: 26px;
+  margin-left: 32px;
+  margin-right: 47px;
+}
+.message__button {
+  font-family: "Kyiv*Type Titling";
+  color: #0f0f0f;
+  font-size: 20px;
+  font-weight: normal;
+  margin-top: 26px;
+  margin-left: 255px;
+  border-radius: 16px;
+  padding: 0 25px;
+}
+.message__button--link {
+  text-decoration: none;
+}
+
+.education {
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+  flex-direction: column;
+}
+.education__title {
+  font-family: "Kyiv*Type Titling";
+  color: #0f0f0f;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.education__programs {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.education__programs .education__culumn .item-about {
+  height: 500px;
+  width: 350px;
+  background-color: #1E1E1E;
+  overflow: auto;
+  box-shadow: 16px 13px #2D2D2D;
+  border-radius: 5% 0% 0% 0%;
+  position: relative;
+}
+.education__programs .education__culumn .item-about__icon {
+  margin-top: 26px;
+  margin-left: 33px;
+}
+.education__programs .education__culumn .item-about__title {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-left: 33px;
+}
+.education__programs .education__culumn .item-about__text {
+  margin-top: 8px;
+  display: flex;
+}
+.education__programs .education__culumn .item-about__text--number {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 33px;
+  margin-right: 3px;
+}
+.education__programs .education__culumn .item-about__text--text {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 300;
+}
+.education__programs .education__culumn .item-about__down-icon {
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+}
+.education__dot {
+  height: 227px;
+  width: 227px;
+  background-color: rgba(0, 0, 0, 0.7490196078);
+  display: flex;
+  border-radius: 50%;
+  z-index: 3;
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 40px;
+  font-weight: 500;
+  margin-top: -455px;
+  align-items: center;
+  justify-content: center;
+}
+.education__advantages {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  justify-content: center;
+}
+.education__advantages .advantages-item {
+  position: relative;
+  height: 328px;
+  width: 575px;
+  display: flex;
+}
+.education__advantages .advantages-item__back-image {
+  width: 100%;
+}
+.education__advantages .advantages-item::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7490196078);
+  z-index: 1;
+}
+.education__advantages .advantages-item__title {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 51px;
+  margin-left: 67px;
+  position: absolute;
+  z-index: 2;
+}
+.education__advantages .advantages-item__line {
+  border-top: 4px solid #FFFFFF;
+  z-index: 2;
+  width: 480px;
+  margin-top: 97px;
+  margin-left: 49px;
+  position: absolute;
+}
+.education__advantages .advantages-item__text {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 2;
+  margin-top: 119px;
+  margin-left: 67px;
+  margin-right: 90px;
+  word-spacing: 5px;
+  text-indent: 35px;
+}/*# sourceMappingURL=style.css.map */

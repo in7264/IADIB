@@ -1,0 +1,294 @@
+$base-black: #0f0f0f;
+$transparent-black: #000000BF;
+$base-white: #FFFFFF;
+$base-grey: #1E1E1E;
+$second-grey: #2D2D2D;
+
+body{
+    margin: 0;
+}
+
+h1{
+    font-family: 'Kyiv*Type Titling';
+    color: $base-white;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+    text-transform: uppercase;
+
+}
+
+h2{
+    font-family: 'Kyiv*Type Titling';
+    color: $base-white;
+    font-size: 40px;
+    margin: 0;
+}
+
+h3{
+    font-family: 'Kyiv*Type Titling';
+    color: $base-white;
+    font-size: 28px;
+    font-weight: 800;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h4{
+    font-family: 'Kyiv*Type Titling';
+    color: $base-white;
+    font-size: 24px;
+    margin: 0;
+}
+
+h5{
+    font-family: 'Kyiv*Type Titling';
+    color: $base-white;
+    font-size: 20px;
+    margin: 0;
+}
+
+h6{
+    font-family: 'Kyiv*Type Titling';
+    color: $base-white;
+    font-size: 16px;
+    margin: 0;
+}
+.header{
+    .menu{
+        height: 144px;
+        background-color: $base-black;
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-between;
+    
+        &:first-of-type {
+            padding-left: 26px;
+        }
+    
+        &:last-of-type {
+            padding-right: 52px;
+        }
+    
+        &__item{
+            font-family: 'Kyiv*Type Titling';
+            font-weight: normal;
+            font-size: 20px;
+            color: $base-white;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+
+.abitur {
+    background-image: url(images/abitur.png);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 464px;
+    height: 331px;
+    margin-left: 764px;
+    margin-top: 126px;
+    background-color: $transparent-black;
+    align-items: center;
+
+    &__title {
+        font-family: 'Kyiv*Type Titling';
+        color: $base-white;
+        font-size: 40px;
+        font-weight: normal;
+        margin-top: 26px;
+    }
+
+    &__text {
+        font-family: 'Kyiv*Type Titling';
+        color: $base-white;
+        font-size: 24px;
+        font-weight: normal;
+        margin-top: 26px;
+        margin-left: 32px;
+        margin-right: 47px;
+    }
+
+    &__button {
+        font-family: 'Kyiv*Type Titling';
+        color: $base-black;
+        font-size: 20px;
+        font-weight: normal;
+        margin-top: 26px;
+        margin-left: 255px;
+        border-radius: 16px;
+        padding: 0 25px;
+
+        &--link {
+            text-decoration: none;
+        }
+    }
+}
+
+.education {
+    display: flex;
+    background-color: $base-white;
+    justify-content: center; /* Центрирование по горизонтали */
+    align-items: center; /* Центрирование по вертикали */
+    flex-direction: column;
+
+    &__title {
+        font-family: 'Kyiv*Type Titling';
+        color: $base-black;
+        font-size: 40px;
+        font-weight: normal;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__programs {
+        display: flex;
+        justify-content: center;
+        gap: 60px;
+
+        .education__culumn {
+            .item-about {
+                height: 500px;
+                width: 350px;
+                background-color: $base-grey;
+                overflow: auto;
+                box-shadow: 16px 13px $second-grey;
+                border-radius: 5% 0% 0% 0%;
+                position: relative;
+        
+                &__icon {
+                    margin-top: 26px;
+                    margin-left: 33px;
+                }
+        
+                &__title {
+                    font-family: 'Kyiv*Type Titling';
+                    color: $base-white;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-top: 10px;
+                    margin-left: 33px;
+                }
+        
+                &__text {
+                    margin-top: 8px;
+                    display: flex;
+        
+                    &--number {
+                        font-family: 'Kyiv*Type Titling';
+                        color: $base-white;
+                        font-size: 20px;
+                        font-weight: 300;
+                        margin-left: 33px;
+                        margin-right: 3px;
+                    }
+        
+                    &--text{
+                        font-family: 'Kyiv*Type Titling';
+                        color: $base-white;
+                        font-size: 16px;
+                        font-weight: 300;
+                    }
+                }
+
+                &__down-icon {
+                    position: absolute;
+                    bottom: 6px;
+                    right: 6px;  
+                }
+            }
+        }
+    }
+
+    &__dot{
+        height: 227px;
+        width: 227px;
+        background-color: $transparent-black;
+        display: flex;
+
+        border-radius: 50%;
+        z-index: 3;
+        font-family: 'Kyiv*Type Titling';
+        color: $base-white;
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: -455px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__advantages{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+
+        .advantages-item {
+            position: relative;
+            height: 328px;
+            width: 575px;
+            display: flex;
+            
+        
+            &__back-image{
+                width: 100%;
+            }
+        
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height:  100%;
+                background-color: $transparent-black;
+                z-index: 1;
+            }
+
+            &__title{
+                font-family: 'Kyiv*Type Titling';
+                color: $base-white;
+                font-size: 24px;
+                font-weight: 500;
+                margin-top: 51px;
+                margin-left: 67px;
+                position: absolute;
+                z-index: 2;
+            }
+
+            &__line{
+                border-top: 4px solid $base-white;
+                z-index: 2;
+                width: 480px;
+                margin-top: 97px;
+                margin-left: 49px;
+                position: absolute;
+            }
+
+            &__text{
+                font-family: 'Kyiv*Type Titling';
+                color: $base-white;
+                font-size: 16px;
+                font-weight: 500;
+                position: absolute;
+                z-index: 2;
+                margin-top: 119px;
+                margin-left: 67px;
+                margin-right: 90px;
+                word-spacing: 5px;
+                text-indent: 35px;
+            }
+        }
+    }
+}
