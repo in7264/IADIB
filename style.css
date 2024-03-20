@@ -11,13 +11,6 @@ h1 {
   text-transform: uppercase;
 }
 
-h2 {
-  font-family: "Kyiv*Type Titling";
-  color: #FFFFFF;
-  font-size: 40px;
-  margin: 0;
-}
-
 h3 {
   font-family: "Kyiv*Type Titling";
   color: #FFFFFF;
@@ -25,27 +18,6 @@ h3 {
   font-weight: 800;
   margin: 0;
   text-transform: uppercase;
-}
-
-h4 {
-  font-family: "Kyiv*Type Titling";
-  color: #FFFFFF;
-  font-size: 24px;
-  margin: 0;
-}
-
-h5 {
-  font-family: "Kyiv*Type Titling";
-  color: #FFFFFF;
-  font-size: 20px;
-  margin: 0;
-}
-
-h6 {
-  font-family: "Kyiv*Type Titling";
-  color: #FFFFFF;
-  font-size: 16px;
-  margin: 0;
 }
 
 .header .menu {
@@ -78,10 +50,8 @@ h6 {
   height: 600px;
   background-size: cover;
   background-position: center bottom;
-  position: relative;
 }
-
-.message {
+.abitur .message {
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -92,14 +62,14 @@ h6 {
   background-color: rgba(0, 0, 0, 0.7490196078);
   align-items: center;
 }
-.message__title {
+.abitur .message__title {
   font-family: "Kyiv*Type Titling";
   color: #FFFFFF;
   font-size: 40px;
   font-weight: normal;
   margin-top: 26px;
 }
-.message__text {
+.abitur .message__text {
   font-family: "Kyiv*Type Titling";
   color: #FFFFFF;
   font-size: 24px;
@@ -108,7 +78,7 @@ h6 {
   margin-left: 32px;
   margin-right: 47px;
 }
-.message__button {
+.abitur .message__button {
   font-family: "Kyiv*Type Titling";
   color: #0f0f0f;
   font-size: 20px;
@@ -118,11 +88,12 @@ h6 {
   border-radius: 16px;
   padding: 0 25px;
 }
-.message__button--link {
+.abitur .message__button--link {
   text-decoration: none;
 }
 
 .education {
+  height: auto;
   display: flex;
   background-color: #FFFFFF;
   justify-content: center;
@@ -187,38 +158,59 @@ h6 {
   bottom: 6px;
   right: 6px;
 }
-.education__dot {
+
+.choose-us {
+  height: auto;
+  display: flex;
+  background-color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
+.choose-us__title {
+  font-family: "Kyiv*Type Titling";
+  color: #0f0f0f;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.choose-us__dot {
   height: 227px;
   width: 227px;
   background-color: rgba(0, 0, 0, 0.7490196078);
   display: flex;
   border-radius: 50%;
-  z-index: 3;
   font-family: "Kyiv*Type Titling";
   color: #FFFFFF;
   font-size: 40px;
   font-weight: 500;
-  margin-top: -455px;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  z-index: 1;
+  margin-top: 120px;
 }
-.education__advantages {
+.choose-us__advantages {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: 1fr 1fr;
   gap: 20px;
   justify-content: center;
 }
-.education__advantages .advantages-item {
+.choose-us__advantages .advantages-item {
   position: relative;
   height: 328px;
   width: 575px;
   display: flex;
+  z-index: 0;
 }
-.education__advantages .advantages-item__back-image {
+.choose-us__advantages .advantages-item__back-image {
   width: 100%;
 }
-.education__advantages .advantages-item::before {
+.choose-us__advantages .advantages-item::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -226,7 +218,7 @@ h6 {
   background-color: rgba(0, 0, 0, 0.7490196078);
   z-index: 1;
 }
-.education__advantages .advantages-item__title {
+.choose-us__advantages .advantages-item__title {
   font-family: "Kyiv*Type Titling";
   color: #FFFFFF;
   font-size: 24px;
@@ -236,7 +228,7 @@ h6 {
   position: absolute;
   z-index: 2;
 }
-.education__advantages .advantages-item__line {
+.choose-us__advantages .advantages-item__line {
   border-top: 4px solid #FFFFFF;
   z-index: 2;
   width: 480px;
@@ -244,7 +236,7 @@ h6 {
   margin-left: 49px;
   position: absolute;
 }
-.education__advantages .advantages-item__text {
+.choose-us__advantages .advantages-item__text {
   font-family: "Kyiv*Type Titling";
   color: #FFFFFF;
   font-size: 16px;
@@ -256,4 +248,104 @@ h6 {
   margin-right: 90px;
   word-spacing: 5px;
   text-indent: 35px;
+}
+
+.events {
+  height: auto;
+  display: flex;
+  background-image: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.events__title {
+  font-family: "Kyiv*Type Titling";
+  color: #0f0f0f;
+  font-size: 40px;
+  font-weight: normal;
+  margin-top: 40px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.events__programs {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.events__programs .education__culumn .item-about {
+  height: 328px;
+  width: 249px;
+  background-image: url(images/events-back.png);
+  border-radius: 12px 12px 0% 0%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.events__programs .education__culumn .item-about::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7490196078);
+  z-index: 0;
+}
+.events__programs .education__culumn .item-about__title {
+  margin-top: 34px;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Inter";
+  color: #FFFFFF;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.events__programs .education__culumn .item-about__number {
+  margin-top: 32px;
+  font-size: 64px;
+  font-weight: 700;
+  font-family: "Inter";
+  color: #FFFFFF;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+}
+.events__programs .education__culumn .item-about__line {
+  position: relative;
+  top: -16px;
+  border-top: 3px solid #FFFFFF;
+  z-index: 2;
+  width: auto;
+  margin-left: 24px;
+  margin-right: 26px;
+}
+.events__programs .education__culumn .item-about__time {
+  font-size: 36px;
+  font-weight: 700;
+  font-family: "Inter";
+  color: #FFFFFF;
+  z-index: 1;
+  display: flex;
+  margin-left: 34px;
+}
+.events__programs .education__culumn .item-about .box {
+  display: flex;
+  height: 100px;
+  margin-top: auto;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.events__programs .education__culumn .item-about__text {
+  display: flex;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Inter";
+  color: #FFFFFF;
+  z-index: 1;
+  margin-left: 16px;
+  margin-right: 16px;
+  justify-content: center;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
