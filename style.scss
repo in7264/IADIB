@@ -110,8 +110,6 @@ h3 {
     }
 }
 
-
-
 .education {
     height: auto;
     display: flex;
@@ -224,7 +222,7 @@ h3 {
         justify-content: center;
         position: absolute;
         z-index: 1;
-        margin-top: 120px;
+        margin-top: 130px;
     }
 
     &__advantages {
@@ -305,7 +303,7 @@ h3 {
         font-family: 'Kyiv*Type Titling';
         color: $base-black;
         font-size: 40px;
-        font-weight: normal;
+        font-weight: 500;
         margin-top: 40px;
         text-align: center;
         margin-bottom: 40px;
@@ -403,5 +401,96 @@ h3 {
                 }
             }
         }
+    }
+}
+
+.whereAreWe{
+    height: auto;
+    display: flex;
+    background-image: $base-white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .arsenal{
+        font-family: 'Kyiv*Type Titling';
+        color: $base-black;
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-family: 'Kyiv*Type Titling';
+        color: $base-black;
+        font-size: 40px;
+        font-weight: 500;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    &__sum {
+        display: flex;
+    }
+
+    iframe {
+        margin: 10px;
+    }
+}
+
+.footer {
+    background-color: #0f0f0f;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    &__bold {
+        color: $base-white;
+        font-family: 'Kyiv*Type Titling';
+        font-size: 24px;
+        font-weight: 500;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    &__thick {
+        color: $base-white;
+        font-family: 'Kyiv*Type Titling';
+        font-size: 20px;
+        font-weight: 100;
+        margin-top: 40px;
+        text-align: center;
+        margin-bottom: 40px;
+        margin-block-start: 0em;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+
+    &__image {
+        width: 40px;
+        height: 40px;
+        margin: 8px;
+    }
+
+    &__images {
+        
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+
+    &__text{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
 }
