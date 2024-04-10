@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 900;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Kyiv*Type Titling";
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.header .menu {
+  height: 144px;
+  background-color: #0f0f0f;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+.header .menu:first-of-type {
+  padding-left: 26px;
+}
+.header .menu:last-of-type {
+  padding-right: 52px;
+}
+.header .menu__item {
+  font-family: "Kyiv*Type Titling";
+  font-weight: normal;
+  font-size: 20px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.requirements {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 61px;
+  justify-content: center;
+  margin-top: 70px;
+}
+.requirements .path {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.requirements .path .space1 {
+  height: 379px;
+  width: 0px;
+  border: 2px solid #0f0f0f;
+}
+.requirements .path .space2 {
+  height: 552px;
+  width: 0px;
+  border: 2px solid #0f0f0f;
+}
+.requirements .path img {
+  width: 75px;
+  height: 75px;
+}
+.requirements .programs {
+  font-family: "Kyiv*Type Titling";
+}
+.requirements .programs .term {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 33px;
+  margin-right: 65px;
+}
+.requirements .programs .term .termTitle {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.requirements .programs .term .termStupin {
+  border-radius: 12px;
+  border-collapse: collapse;
+}
+.requirements .programs .term .termStupin td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: 300;
+}
+.requirements .programs .term .termStupin tr {
+  height: 85px;
+}
+.requirements .programs .term .termStupin .stupin {
+  border: none;
+  width: 141px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.requirements .programs .term .termStupin .stupin-1 {
+  border: none;
+  border-radius: 12px 0px 0px 0px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.requirements .programs .term .termStupin .stupin-3 {
+  border: none;
+  border-radius: 0px 0px 0px 12px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}/*# sourceMappingURL=styleAbitur.css.map */
