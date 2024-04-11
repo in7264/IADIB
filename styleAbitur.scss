@@ -4,6 +4,7 @@ $table-black: #1E1E1E;
 $base-white: #FFFFFF;
 $base-grey: #1E1E1E;
 $second-grey: #2D2D2D;
+$subtext-grey: #5A5A5A;
 
 body {
     margin: 0;
@@ -64,7 +65,7 @@ h3 {
     margin: 0px 61px;
     justify-content: center;
     margin-top: 70px;
-
+    
     .path {
         display: flex;
         flex-direction: column;
@@ -91,6 +92,13 @@ h3 {
     .programs {
         font-family: 'Kyiv*Type Titling';
 
+        .Title {
+            font-size: 40px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
         .term {
             display: flex;
             flex-direction: column;
@@ -98,11 +106,14 @@ h3 {
             margin-left: 33px;
             margin-right: 65px;
 
-            .termTitle {
-                font-size: 40px;
-                font-weight: 300;
-                margin-bottom: 20px;
-                margin-top: 20px;
+            .name {
+                text-align: left;
+                width: 635px;
+            }
+
+            .time {
+                text-align: center;
+                width: 270px;
             }
 
             .termStupin {
@@ -148,6 +159,85 @@ h3 {
                         font-weight: 300;
                         text-align: center;
                     }
+                }
+            }
+        }
+
+        .price {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 33px;
+            margin-right: 65px;
+
+            .Title {
+                margin-top: 54px;
+            }
+
+            .termStupin {
+                border-radius: 12px;
+                border-collapse: collapse;
+
+                td {
+                    border-collapse: collapse;
+                    border: 1px solid black;
+                    font-size: 24px;
+                    font-weight: 300;
+                }
+
+                .cost {
+                    text-align: center;
+                }
+
+                .name {
+                    text-align: left;
+                    width: 635px;
+                }
+
+                tr {
+                    height: 85px;
+                }
+
+                .stupin {
+                    border: none;
+                    width: 141px;
+                    background-color: $table-black;
+                    color: $base-white;
+                    font-size: 24px;
+                    font-weight: 300;
+                    text-align: center;
+
+                    &-1 {
+                        border: none;
+                        border-radius: 12px 0px 0px 0px;
+                        background-color: $table-black;
+                        color: $base-white;
+                        font-size: 24px;
+                        font-weight: 300;
+                        text-align: center;
+                    }
+
+                    &-3 {
+                        border: none;
+                        border-radius: 0px 0px 0px 12px;
+                        background-color: $table-black;
+                        color: $base-white;
+                        font-size: 24px;
+                        font-weight: 300;
+                        text-align: center;
+                    }
+                }
+
+                .subtext1{
+                    color: $subtext-grey;
+                    width: auto;
+                    text-align: end;
+                }
+
+                .subtext{
+                    color: $subtext-grey;
+                    width: 270px;
+                    text-align: center;
                 }
             }
         }

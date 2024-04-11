@@ -73,6 +73,12 @@ h3 {
 .requirements .programs {
   font-family: "Kyiv*Type Titling";
 }
+.requirements .programs .Title {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
 .requirements .programs .term {
   display: flex;
   flex-direction: column;
@@ -80,11 +86,13 @@ h3 {
   margin-left: 33px;
   margin-right: 65px;
 }
-.requirements .programs .term .termTitle {
-  font-size: 40px;
-  font-weight: 300;
-  margin-bottom: 20px;
-  margin-top: 20px;
+.requirements .programs .term .name {
+  text-align: left;
+  width: 635px;
+}
+.requirements .programs .term .time {
+  text-align: center;
+  width: 270px;
 }
 .requirements .programs .term .termStupin {
   border-radius: 12px;
@@ -124,5 +132,72 @@ h3 {
   color: #FFFFFF;
   font-size: 24px;
   font-weight: 300;
+  text-align: center;
+}
+.requirements .programs .price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 33px;
+  margin-right: 65px;
+}
+.requirements .programs .price .Title {
+  margin-top: 54px;
+}
+.requirements .programs .price .termStupin {
+  border-radius: 12px;
+  border-collapse: collapse;
+}
+.requirements .programs .price .termStupin td {
+  border-collapse: collapse;
+  border: 1px solid black;
+  font-size: 24px;
+  font-weight: 300;
+}
+.requirements .programs .price .termStupin .cost {
+  text-align: center;
+}
+.requirements .programs .price .termStupin .name {
+  text-align: left;
+  width: 635px;
+}
+.requirements .programs .price .termStupin tr {
+  height: 85px;
+}
+.requirements .programs .price .termStupin .stupin {
+  border: none;
+  width: 141px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.requirements .programs .price .termStupin .stupin-1 {
+  border: none;
+  border-radius: 12px 0px 0px 0px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.requirements .programs .price .termStupin .stupin-3 {
+  border: none;
+  border-radius: 0px 0px 0px 12px;
+  background-color: #1E1E1E;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+.requirements .programs .price .termStupin .subtext1 {
+  color: #5A5A5A;
+  width: auto;
+  text-align: end;
+}
+.requirements .programs .price .termStupin .subtext {
+  color: #5A5A5A;
+  width: 270px;
   text-align: center;
 }/*# sourceMappingURL=styleAbitur.css.map */
